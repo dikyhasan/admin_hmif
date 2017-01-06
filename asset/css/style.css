@@ -3,7 +3,7 @@
   src: url("../fonts/Lato-Regular.ttf");
 }
 .btn-primary{
-  background-color: #dbf948!important;
+  background-color: #e6e44d!important;
   border: none;
   border-radius: 3px!important;
 }
@@ -25,12 +25,12 @@ body{
 }
 .color:hover{
   text-decoration: none;
-  color:#dbf948;
+  color:#e6e44d;
   -moz-transition: all 0.9s;
   -webkit-transition: all 0.5s;
 }
 .identify{
-  color:#dbf948;
+  color:#555;
   font-weight: bold;
 }
 
@@ -56,7 +56,7 @@ body{
 		  z-index: 2;
 		}
 	}
-	input[type="text"], input[type="password"] {
+	input[type="text"], input[type="password"],input[type="email"] {
 	  margin-bottom: -1px;
 	  border-bottom-left-radius: 0;
 	  border-bottom-right-radius: 0;
@@ -65,7 +65,7 @@ body{
     border-radius: 3px!important;
 	}
   input[type="text"], input[type="password"], input[type="email"]:active{
-    /*border: #dbf948 solid 2px;*/
+    /*border: #e6e44d solid 2px;*/
     -webkit-transition: all 0.9s;
     -moz-transition: all 0.9s;
   }
@@ -80,8 +80,8 @@ body{
   input[type="password"]:focus,
   .uneditable-input:focus {
   /*border-color: rgb(78, 79, 78);*/
-  border-color: #dbf948;
+  border-color: #e6e44d;
   /*box-shadow: 0 1px 1px rgb(78, 79, 78) inset, 0 0 8px rgb(78, 79, 78);*/
-  box-shadow: 0 1px 1px #dbf948 inset, 0 0 1px #dbf948;
+  box-shadow: 0 1px 1px #e6e44d inset, 0 0 1px #e6e44d;
   outline: 0 none;
   }

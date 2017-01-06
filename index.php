@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include 'identitas.php'; ?>
     <!-- URL Theme Color untuk Chrome, Firefox OS, Opera dan Vivaldi -->
-    <meta name="theme-color" content="#dbf948" />
+    <meta name="theme-color" content="#e6e44d" />
     <!-- URL Theme Color untuk Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#dbf948" />
+    <meta name="msapplication-navbutton-color" content="#e6e44d" />
     <!-- URL Theme Color untuk iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#dbf948" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e6e44d" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <title>HMIF &rsaquo; Administrator</title>
-    <link href="" rel="shortcut icon">
+    <link href="view-image.php?id_identitas=1" rel="shortcut icon">
     <!-- Bootstrap Core CSS -->
     <link href="http://localhost/website-hmif/wp-admin/asset/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -29,10 +30,10 @@
         $auth = isset($_GET['auth']) ? isset($_GET['auth']): '';
         $out = '';
         switch ($auth) {
-          case 'QPeqieqsS':
+          case 'd11dasda121331adad':
               $out = '
                 <center>
-                <p style="color:#fff;border:#993366 solid 2px;padding:5px;background-color:#993366;font-size:10pt;">
+                <p style="color:#fff;padding:10px;background-color:#555;font-size:10pt;border-radius: 3px;">
                   <i class="glyphicon glyphicon-remove"></i>&nbsp; <b>ERROR :</b> Invalid username or password !
                 </p>
                 </center>
@@ -49,12 +50,12 @@
           <h2 class="form-signin-heading identify text-center">HMIF<br><small class="identify">Admnistrator</small></h2>
           <br>
           <?php echo $out; ?>
-            <input type="text" class="form-control" name="username" placeholder="Username" required="">
+          <input type="text" class="form-control" name="username" placeholder="Username" required="">
           <br>
           <input type="password" class="form-control" name="password" placeholder="Password" required="">
           <br>
           <p align="right"><a href="lost-password.php" class="color"><b>Forgot Password?</b></a></p>
-          <button class="btn btn-lg btn-primary btn-block" type="submit" name="masuk">Login</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Login</button>
         </form>
         <br>
           <center>
